@@ -12,3 +12,10 @@ git log -n3 --pretty=oneline
 git log命令显示从最近到最远的提交日志，我们可以看到3次提交，git的commit id是一个SHA1计算出来的一个非常大的数字，用十六进制表示。
 为什么commit id需要用这么一大串数字表示呢？因为Git是分布式的版本控制系统，多人在同一个版本库里工作，如果用1，2，3……作为版本号，很容易冲突。
 
+5、回滚可以使用
+git reset --hard HEAD^
+git reset --hard b176c039efa5e
+
+然后强制覆盖
+6、git push --force origin master
+
